@@ -21,7 +21,6 @@ public class Npc : MonoBehaviour
 	public virtual void Interact()
 	{
 		if (alreadyInteracted) return;
-		
-		alreadyInteracted = true;
+			alreadyInteracted = true;
 	}
 }
