@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIKencing : MonoBehaviour
 {
@@ -11,12 +13,23 @@ public class UIKencing : MonoBehaviour
 
 
     [SerializeField] private TextMeshProUGUI delayBeforeStartText;
+    [SerializeField] private Slider kencingTimerSlider;
+    [SerializeField] private TextMeshProUGUI kencingTimerText;
+    private float startSliderTime;
+
     private bool isDelayActive = false;
 
     private void Awake()
     {
         KencingManager.OnGameStateChanged += GameManagerOnGameStateChanged;
     }
+
+    private void Start()
+    {
+        startSliderTime = KencingManager.instance.kencingTimer;
+    }
+
+
 
     private void OnDestroy()
     {
@@ -30,16 +43,29 @@ public class UIKencing : MonoBehaviour
             delayBeforeStartText.SetText(KencingManager.instance.delayBeforeStart.ToString("#.00"));
         }
         
-        if(KencingManager.instance.delayBeforeStart <= 0)
+        if(KencingManager.instance.delayBeforeStart <= 0 && KencingManager.instance.kencingTimer >= 0)
         {
+            KencingManager.instance.kencingTimer -= Time.deltaTime;
+            UpdateSliderUI();
             delayBeforeStartText.gameObject.SetActive(false);
+
+            if(KencingManager.instance.kencingTimer <= 0)
+            {
+                ChangeStateToGameover();
+            }
         }
+    }
+
+    void UpdateSliderUI()
+    {
+        kencingTimerSlider.value = KencingManager.instance.kencingTimer / startSliderTime;
+        kencingTimerText.text = KencingManager.instance.kencingTimer.ToString("F1"); // Format to one decimal place
     }
     private void GameManagerOnGameStateChanged(GameState state)
     {
         startButton.SetActive(state == GameState.WAIT);
 
-        battlePanel.SetActive(state == GameState.GAMEPLAY);
+        //battlePanel.SetActive(state == GameState.GAMEPLAY);
 
         restartPanel.SetActive(state == GameState.GAMEOVER);
 
@@ -54,5 +80,16 @@ public class UIKencing : MonoBehaviour
     public void ChangeStateToGameplay()
     {
         KencingManager.instance.UpdateGameState(GameState.GAMEPLAY);
+    }
+
+    public void ChangeStateToGameover()
+    {
+        KencingManager.instance.UpdateGameState(GameState.GAMEOVER);
+    }
+
+    public void RestartButtonClicked()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 }
