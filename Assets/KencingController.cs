@@ -14,7 +14,7 @@ public class KencingController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(KencingManager.instance.delayBeforeStart <= 0)
+        if(KencingManager.instance.delayBeforeStart <= 0 && KencingManager.instance.kencingTimer >= 0)
         {
             //Debug.Log("test");
             // Get input from the player
@@ -27,6 +27,10 @@ public class KencingController : MonoBehaviour
 
             // Move the Rigidbody based on the input and speed multiplied by Time.deltaTime
             rb.velocity = new Vector2(movement.x * speed * Time.deltaTime, movement.y * speed * Time.deltaTime);
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
         }
     }
 }

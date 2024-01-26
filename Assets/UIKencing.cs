@@ -11,6 +11,8 @@ public class UIKencing : MonoBehaviour
     [SerializeField] private GameObject restartPanel;
     [SerializeField] private GameObject battlePanel;
 
+    [SerializeField] private GameObject buttonFinish;
+    [SerializeField] private GameObject buttonRestart;
 
     [SerializeField] private TextMeshProUGUI delayBeforeStartText;
     [SerializeField] private Slider kencingTimerSlider;
@@ -40,7 +42,7 @@ public class UIKencing : MonoBehaviour
     {
         if (isDelayActive == true && KencingManager.instance.delayBeforeStart >= 0) {
             KencingManager.instance.delayBeforeStart -= Time.deltaTime;
-            delayBeforeStartText.SetText(KencingManager.instance.delayBeforeStart.ToString("#.00"));
+            delayBeforeStartText.SetText(KencingManager.instance.delayBeforeStart.ToString("F1"));
         }
         
         if(KencingManager.instance.delayBeforeStart <= 0 && KencingManager.instance.kencingTimer >= 0)
@@ -68,6 +70,12 @@ public class UIKencing : MonoBehaviour
         //battlePanel.SetActive(state == GameState.GAMEPLAY);
 
         restartPanel.SetActive(state == GameState.GAMEOVER);
+
+        if (KencingManager.instance.targetDoneCount >= KencingManager.instance.maxTarget)
+        {
+            buttonFinish.SetActive(true);
+            buttonRestart.SetActive(false);
+        }
 
     }
 
