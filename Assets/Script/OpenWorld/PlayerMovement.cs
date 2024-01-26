@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float airMultiplier;
     [SerializeField] private bool readyToJump;
     [SerializeField] private bool canJump;
+    [SerializeField] private bool paused;
     [Header("Keybinds")]
     [SerializeField] private KeyCode jumpKey = KeyCode.Space;
 
@@ -35,8 +36,21 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
+    public void Pause()
+    {
+        paused = true;
+        rb.velocity = Vector3.zero;
+        horizontalInput = 0;
+        verticalInput = 0;
+        anim.SetBool("Lari", false);
+    }
+    public void Continue()
+    {
+        paused = false;
+    }
     private void Update()
     {
+        
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
         MyInput();
 
@@ -62,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MyInput()
     {
+        if (paused)
+            return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         if (horizontalInput == 0 && verticalInput == 0)

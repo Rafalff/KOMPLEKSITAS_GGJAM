@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Npc : MonoBehaviour
 {
 	[SerializeField] private NpcData data;
 	[SerializeField] private bool canInteract;
 	[SerializeField] private GameObject interactObject;
-	[SerializeField] private bool alreadyInteracted;
+	public bool alreadyInteracted;
+
+	public event Action OnTrigger;
+	public event Action OnCleared;
+
 	public virtual void CanInteract()
 	{
 		canInteract = true;
@@ -22,5 +27,15 @@ public class Npc : MonoBehaviour
 	{
 		if (alreadyInteracted) return;
 			alreadyInteracted = true;
+	}
+	public void Trigger()
+	{
+		OnTrigger?.Invoke();
+		alreadyInteracted = true;
+	}
+	public void Cleared()
+	{
+		OnCleared?.Invoke();
+		alreadyInteracted = true;
 	}
 }

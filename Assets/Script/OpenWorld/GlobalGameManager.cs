@@ -22,6 +22,10 @@ public class GlobalGameManager : MonoBehaviour
 			}
 		}
 	}
+	public void AddInventory(InventoryData data)
+	{
+		inventory.Add(data);
+	}
 	public void ClearMicin()
 	{
 		clearMicin = true;

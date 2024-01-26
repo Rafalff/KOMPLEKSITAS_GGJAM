@@ -9,15 +9,28 @@ public class ThirdPersonCamera : MonoBehaviour
     [SerializeField] private Transform playerObj;
     [SerializeField] private Rigidbody rb;
 
-    [SerializeField] float rotationSpeed;
+    [SerializeField] private float rotationSpeed;
+    [SerializeField] private bool paused;
+
+  
 
 	private void Start()
 	{
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 	}
-	private void FixedUpdate()
+    public void Pause()
+    {
+        paused = true;
+    }
+    public void Continue()
+    {
+        paused = false;
+    }
+    private void FixedUpdate()
 	{
+        if (paused)
+            return;
         Vector3 viewDir = player.position - new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
         orientation.forward = viewDir.normalized;
 

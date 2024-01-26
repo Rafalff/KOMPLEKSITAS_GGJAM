@@ -5,11 +5,19 @@ using UnityEngine;
 public class NpcTrigger : MonoBehaviour
 {
 	[SerializeField] private Npc npc;
+	[SerializeField] private bool autoTrigger; 
 	private void OnTriggerEnter(Collider collision)
 	{
 		if (collision.CompareTag("Player"))
 		{
-			npc.CanInteract();
+			if (!autoTrigger)
+			{
+				npc.CanInteract();
+			}
+			else {
+				if (!npc.alreadyInteracted)
+					npc.Trigger();
+			}
 			//GameManager.Instance.GetPlayerData().TouchNpc(npc);
 		}
 	}
