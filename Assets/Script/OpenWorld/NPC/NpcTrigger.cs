@@ -5,20 +5,20 @@ using UnityEngine;
 public class NpcTrigger : MonoBehaviour
 {
 	[SerializeField] private Npc npc;
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter(Collider collision)
 	{
 		if (collision.CompareTag("Player"))
 		{
 			npc.CanInteract();
-			GameManager.Instance.GetPlayerData().TouchNpc(npc);
+			//GameManager.Instance.GetPlayerData().TouchNpc(npc);
 		}
 	}
-	private void OnTriggerExit2D(Collider2D collision)
+	private void OnTriggerExit(Collider collision)
 	{
 		if (collision.CompareTag("Player"))
 		{
 			npc.CantInteract();
-			GameManager.Instance.GetPlayerData().UnTouchNpc();
+			//GameManager.Instance.GetPlayerData().UnTouchNpc();
 		}
 	}
 }
