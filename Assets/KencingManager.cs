@@ -16,7 +16,10 @@ public class KencingManager : MonoBehaviour
     public GameState state;
     public static event Action<GameState> OnGameStateChanged;
     public float delayBeforeStart;
+    public float kencingTimer;
 
+    public int targetDoneCount = 0;
+    public int maxTarget = 5;
     void Awake()
     {
         instance = this;
