@@ -6,5 +6,6 @@ public class OpenWorldManager : MonoBehaviour
 {
     public static OpenWorldManager Instance;
 
+    [SerializeField] private MalingBehaController malingBehaController;
     
 }
