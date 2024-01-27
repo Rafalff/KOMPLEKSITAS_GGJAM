@@ -821,7 +821,7 @@ MonoBehaviour:
   timerText: {fileID: 1259338493}
   restartPanel: {fileID: 252015279}
   winPanel: {fileID: 943227384}
-  transition: {fileID: 0}
+  transition: {fileID: 1414161007}
 --- !u!114 &724785781
 MonoBehaviour:
   m_ObjectHideFlags: 0
