@@ -10,6 +10,7 @@ public class GlobalGameManager : MonoBehaviour
 	[SerializeField] public bool clearRokok { get; private set; }
 	[SerializeField] public bool clearSayur { get; private set; }
 	[SerializeField] public bool malingKetangkep { get; private set; }
+	[SerializeField] public bool kucingKelarBerak { get; private set; }
 
 	[SerializeField] public InventoryData dataMicin;
 	[SerializeField] public InventoryData dataRokok;
@@ -90,6 +91,10 @@ public class GlobalGameManager : MonoBehaviour
 	{
 		clearRokok = true;
 		AddInventory(dataRokok);
+	}
+	public void KucingClearBerak()
+	{
+		kucingKelarBerak = true;
 	}
 	public void ClearSayur()
 	{
