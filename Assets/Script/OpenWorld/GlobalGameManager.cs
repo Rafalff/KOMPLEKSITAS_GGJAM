@@ -14,6 +14,7 @@ public class GlobalGameManager : MonoBehaviour
 		if (Instance == null)
 		{
 			DontDestroyOnLoad(this.gameObject);
+			Instance = this;
 		}
 		else {
 			if (Instance != this)
