@@ -15,42 +15,29 @@ MonoBehaviour:
   dialogueList:
   - imageName: Nene
     name: Nene
-    text: Bro, kadieu!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    text: Gimana boy? ada makhluk yang dateng?
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Tas
     name: Tas
-    text: (Wah, nenek gaul sepertinya butuh bantuan, hal bodoh apalagi yang mau dia
-      lakukan ya?!)
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    text: Tadi cuman ada kucing mau ee nek
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Nene
     name: Nene
-    text: 'Kamu jagain kebun gua ya, gua mau b*rak kebelakang, disini suka ada kucing
-      ber*k. jangan sampai dia b*r*k di halaman gua, suruh aja ke belakang b***k
-      bareng gua!
+    text: 'Kamu sudah menghalaunya?
 
 '
     imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Tas
     name: Tas
-    text: Kenapa diriku harus menjaga tempat ini?!
+    text: Itu menghalau pake HP?
     imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Nene
     name: Nene
-    text: Ada imbalannya dong, lu ambil kucingnya buat peliharaan atau lu dapet endorse
-      gratis dari gua
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
-  - imageName: Tas
-    name: Tas
-    text: Jiah, pilihan macam apa itu rugi dong?!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
-  - imageName: Nene
-    name: Nene
-    text: Bac*t, udah lu jaga aja dulu nanti ada rewardnya dah!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    text: Tidak... Nih kamu kayaknya harus makan ini biar makin pinter deh!, sekalian
+      aja, kamu jual ini buat uang jajan!
+    imageSprite: {fileID: 21300000, guid: 967f31c29e432a14eae140f473547706, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}

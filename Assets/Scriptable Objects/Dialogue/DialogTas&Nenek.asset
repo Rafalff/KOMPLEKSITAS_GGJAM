@@ -16,13 +16,13 @@ MonoBehaviour:
   - imageName: Nene
     name: Nene
     text: Bro, kadieu!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Tas
     name: Tas
     text: (Wah, nenek gaul sepertinya butuh bantuan, hal bodoh apalagi yang mau dia
       lakukan ya?!)
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Nene
     name: Nene
@@ -31,26 +31,26 @@ MonoBehaviour:
       bareng gua!
 
 '
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Tas
     name: Tas
     text: Kenapa diriku harus menjaga tempat ini?!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Nene
     name: Nene
     text: Ada imbalannya dong, lu ambil kucingnya buat peliharaan atau lu dapet endorse
       gratis dari gua
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Tas
     name: Tas
     text: Jiah, pilihan macam apa itu rugi dong?!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
   - imageName: Nene
     name: Nene
     text: Bac*t, udah lu jaga aja dulu nanti ada rewardnya dah!
-    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
     voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
