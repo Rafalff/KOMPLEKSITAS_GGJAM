@@ -5,11 +5,14 @@ using UnityEngine;
 public class MalingBehaController : MonoBehaviour
 {
     [SerializeField] private Npc banci;
+	[SerializeField] private BangBlok banglok;
 	[SerializeField] private GameObject[] HideObject;
 	[SerializeField] private GameObject[] ShowObject;
 	[SerializeField] private bool isActive;
 	[SerializeField] private InventoryData inventoryData;
 	[SerializeField] private DialogueScriptable dialogueData;
+	[SerializeField] private List<Transform> waypoints;
+
 
 	private void Start()
 	{
@@ -51,6 +54,7 @@ public class MalingBehaController : MonoBehaviour
 	private void PlayMalingMinigame()
 	{
 		Debug.Log("Play Maling Minigame");
+		banglok.AddWaypoints(waypoints);
 		for (int i = 0; i < HideObject.Length; i++)
 		{
 			HideObject[i].SetActive(false);
