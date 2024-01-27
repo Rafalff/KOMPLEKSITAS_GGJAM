@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e584c014635eee48a23572ea0fef0c0, type: 3}
-  m_Name: Rokok
+  m_Name: Cre'estal
   m_EditorClassIdentifier: 
   Name: Rokok
   Description: 
-  sprite: {fileID: 21300000, guid: dc85ae397bd6cfc40976ef7d664df4ce, type: 3}
+  sprite: {fileID: 21300000, guid: a2565bd6d6d1db64d9238ff8351c4673, type: 3}

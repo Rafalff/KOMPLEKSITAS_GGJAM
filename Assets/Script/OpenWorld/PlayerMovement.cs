@@ -41,6 +41,14 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        if (GlobalGameManager.Instance.lastOpenWorldPosition != Vector3.zero)
+        {
+            transform.position = GlobalGameManager.Instance.lastOpenWorldPosition;
+            GlobalGameManager.Instance.CheckOpenScene();
+        }
+        else {
+            GlobalGameManager.Instance.CheckOpenScene();
+        }
     }
    
     public void Pause()
@@ -182,7 +190,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(10);
         //Monologue Pengen Kencing
         OpenWorldManager.Instance.PlayMonologue(kencingMonologue);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
+        GlobalGameManager.Instance.lastOpenWorldPosition = this.transform.position; ;
         SceneManager.LoadScene("Kencing1");
 
     }

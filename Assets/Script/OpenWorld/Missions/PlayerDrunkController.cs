@@ -5,9 +5,10 @@ using UnityEngine;
 public class PlayerDrunkController : MonoBehaviour
 {
     [SerializeField] private GameObject npcTrigger;
-    [SerializeField] private Npc bangBlok;
+    [SerializeField] private BangBlok bangBlok;
 	[SerializeField] private DialogueScriptable dialogueData;
 	[SerializeField] private PlayerMovement playerMovement;
+	[SerializeField] private Transform tempatBanglokModar;
 	
 	private void Start()
 	{
@@ -26,6 +27,21 @@ public class PlayerDrunkController : MonoBehaviour
 		playerMovement.MakePlayerDrunk(false);
 		playerMovement.SoberTimer();
 	}
+	public void SetelahDiterimaSayur()
+	{
+		bangBlok.transform.position = tempatBanglokModar.transform.position;
+	
+		npcTrigger.SetActive(false);
+		bangBlok.Modar();
+	}
+	public void AfterLari()
+	{
+		bangBlok.transform.position = tempatBanglokModar.transform.position;
+	}
+	public void SebelumDiterimaSayur()
+	{
+		npcTrigger.SetActive(true);
+	}
 	public void MakePlayerSober()
 	{
 		playerMovement.MakePlayerDrunk(true);
@@ -33,6 +49,7 @@ public class PlayerDrunkController : MonoBehaviour
 	public void ActivateTrigger()
     {
 		npcTrigger.SetActive(true);
+		AfterLari();
 	}
 
 }

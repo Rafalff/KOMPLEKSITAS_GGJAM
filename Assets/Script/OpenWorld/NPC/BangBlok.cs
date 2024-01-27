@@ -43,7 +43,12 @@ public class BangBlok : Npc
             }
         }
 	}
-	public void AddWaypoints(List<Transform> data)
+    public void Modar()
+    {
+        anim.SetTrigger("Modar");
+        rb.isKinematic = true;
+    }
+    public void AddWaypoints(List<Transform> data)
     {
         waypoints = data;
         StartLari();
@@ -80,6 +85,7 @@ public class BangBlok : Npc
                     anim.SetBool("Lari", false);
                     anim.SetTrigger("Modar");
                     playerDrunkController.ActivateTrigger();
+                    GlobalGameManager.Instance.MalingKetangkep();
                 }
             }
           

@@ -11,13 +11,14 @@ public class MalingBehaController : MonoBehaviour
 	[SerializeField] private bool isActive;
 	[SerializeField] private InventoryData inventoryData;
 	[SerializeField] private DialogueScriptable dialogueData;
+	[SerializeField] private DialogueScriptable afterBalikinDialogueData;
 	[SerializeField] private List<Transform> waypoints;
 	[SerializeField] private GameObject malingBehaKetangkepTrigger;
+	[SerializeField] private Transform tempatBanciKedua;
 
 	private void Start()
 	{
-		banci.OnCleared += Cleared;
-		banci.OnTrigger += Triggerred;
+		
 		for (int i = 0; i < ShowObject.Length; i++)
 		{
 			ShowObject[i].SetActive(false);
@@ -39,8 +40,7 @@ public class MalingBehaController : MonoBehaviour
 		{
 			ShowObject[i].SetActive(false);
 		}
-		GlobalGameManager.Instance.AddInventory(inventoryData);
-		GlobalGameManager.Instance.ClearRokok();
+
 	}
 	private void Triggerred()
 	{
@@ -51,6 +51,20 @@ public class MalingBehaController : MonoBehaviour
 			OpenWorldManager.Instance.PlayDialogue(dialogueData);
 			isActive = true;
 		}
+	}
+	private void AfterKetangkepTriggerred()
+	{
+		if (!isActive)
+		{
+			Debug.Log("After Ketangkep Triggerred");
+			OpenWorldManager.Instance.GetDialogue().afterDialogueCompleted += AfterBalikinBeha;
+			OpenWorldManager.Instance.PlayDialogue(afterBalikinDialogueData);
+			isActive = true;
+		}
+	}
+	private void AfterBalikinBeha()
+	{
+		GlobalGameManager.Instance.ClearRokok();
 	}
 	private void PlayMalingMinigame()
 	{
@@ -65,8 +79,20 @@ public class MalingBehaController : MonoBehaviour
 			ShowObject[i].SetActive(true);
 		}
 	}
+	public void MalingBehaBelomKetangkep()
+	{
+		banci.OnCleared += Cleared;
+		banci.OnTrigger += Triggerred;
+		malingBehaKetangkepTrigger.gameObject.SetActive(false);
+		Debug.Log("MalingBehaBelomKetangkep");
+
+	}
 	public void MalingBehaKetangkep()
-	{ 
-		
+	{
+		banci.OnCleared += AfterBalikinBeha;
+		banci.OnTrigger += AfterKetangkepTriggerred;
+		malingBehaKetangkepTrigger.gameObject.SetActive(true);
+		banci.transform.position = tempatBanciKedua.position;
+		Debug.Log("MalingBehaKetangkep");
 	}
 }
