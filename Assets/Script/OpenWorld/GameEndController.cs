@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEndController : MonoBehaviour
 {
@@ -12,12 +13,14 @@ public class GameEndController : MonoBehaviour
 			if (GlobalGameManager.Instance.CheckFullItem())
 			{
 				Debug.Log("EndGame");
+				SceneManager.LoadScene("Outro");
 			}
 			else {
 				Debug.Log("Item Not Completed");
-				
+				OpenWorldManager.Instance.PlayMonologue(data);
 			}
 			
 		}
 	}
+	
 }

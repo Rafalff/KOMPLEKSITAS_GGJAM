@@ -23,6 +23,7 @@ public class MonologueManager : MonoBehaviour
     public void StartMonologue(MonologueData data)
     {
         Show();
+        sound.Stop();
         StopAllCoroutines();
         CancelInvoke();
         dialogueText.color = data.color;
