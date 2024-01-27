@@ -100,4 +100,14 @@ public class UIKencing : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
+
+    public void FinishQuest()
+    {
+        GlobalGameManager.Instance.ClearSayur();
+    }
+
+    public void NextStage2()
+    {
+        SceneManager.LoadScene("Kencing2");
+    }
 }
