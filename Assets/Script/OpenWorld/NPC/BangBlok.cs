@@ -76,7 +76,7 @@ public class BangBlok : Npc
                     Debug.Log("Kelar Lari");
                     isLari = false;
                     anim.SetBool("Lari", false);
-
+                    anim.SetTrigger("Modar");
                 }
             }
           
