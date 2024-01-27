@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MinigameKencing/Kencing1.unity
+    guid: 30c1724cc1af1594c8776fe8b5127fb7
+  - enabled: 1
+    path: Assets/Scenes/MinigameKencing/Kencing2.unity
+    guid: fde937734b8b990449462ba76b11821b
   m_configObjects: {}

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class UIKencing : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class UIKencing : MonoBehaviour
     [SerializeField] private TextMeshProUGUI delayBeforeStartText;
     [SerializeField] private Slider kencingTimerSlider;
     [SerializeField] private TextMeshProUGUI kencingTimerText;
+
+    [SerializeField] private CanvasGroup panelWin;
     private float startSliderTime;
 
     private bool isDelayActive = false;
@@ -75,6 +78,10 @@ public class UIKencing : MonoBehaviour
         {
             buttonFinish.SetActive(true);
             buttonRestart.SetActive(false);
+
+            panelWin.DOFade(1f, 1f)
+                    .From(0f)
+                    .SetEase(Ease.OutSine);
         }
 
     }
@@ -106,8 +113,8 @@ public class UIKencing : MonoBehaviour
         GlobalGameManager.Instance.ClearSayur();
     }
 
-    public void NextStage2()
+    public void NextScene(string scene)
     {
-        SceneManager.LoadScene("Kencing2");
+        SceneManager.LoadScene(scene);
     }
 }
