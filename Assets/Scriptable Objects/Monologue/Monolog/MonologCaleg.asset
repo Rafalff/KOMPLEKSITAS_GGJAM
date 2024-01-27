@@ -16,5 +16,5 @@ MonoBehaviour:
   textList:
   - Wah banyak caleg, kalian pilih siapa nih?!
   voiceList:
-  - {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - {fileID: 8300000, guid: 7c9e25a8ab9eb684e87419d7a9ca041d, type: 3}
   delay: 00000000
