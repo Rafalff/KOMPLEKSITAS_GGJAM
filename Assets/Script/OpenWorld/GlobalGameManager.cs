@@ -16,6 +16,7 @@ public class GlobalGameManager : MonoBehaviour
 	[SerializeField] public InventoryData dataRokok;
 	[SerializeField] public InventoryData dataSayur;
 	[SerializeField] public InventoryData dataKreestal;
+	[SerializeField] private MonologueData firstMonologue;
 
 	public Vector3 lastOpenWorldPosition;
 	private void Awake()
@@ -34,7 +35,10 @@ public class GlobalGameManager : MonoBehaviour
 	}
 	private void Start()
 	{
-		
+		if (OpenWorldManager.Instance != null)
+		{
+			OpenWorldManager.Instance.PlayMonologue(firstMonologue);
+		}
 	}
 	public void CheckOpenScene()
 	{
