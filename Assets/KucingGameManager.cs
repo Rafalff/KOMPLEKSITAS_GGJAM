@@ -25,6 +25,8 @@ public class KucingGameManager : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         instance = this;
         StartAnimation();
     }
