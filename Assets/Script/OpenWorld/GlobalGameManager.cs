@@ -64,6 +64,14 @@ public class GlobalGameManager : MonoBehaviour
 		else {
 			OpenWorldManager.Instance.MalingBehaBelomKetangkep();
 		}
+		if (kucingKelarBerak)
+		{
+			OpenWorldManager.Instance.SetelahKelarKucing();
+		}
+		else 
+		{
+			OpenWorldManager.Instance.SebelumKelarKucing();
+		}
 		OpenWorldManager.Instance.ShowInventory(inventory);
 	}
 	public void AddInventory(InventoryData data)

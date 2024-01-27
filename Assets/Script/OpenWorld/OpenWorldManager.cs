@@ -23,6 +23,7 @@ public class OpenWorldManager : MonoBehaviour
 	}
 	private void Start()
 	{
+        Time.timeScale = 1;
         OpenWorldManager.Instance.ShowInventory(GlobalGameManager.Instance.GetInventory());
     }
     public void ShowInventory(List<InventoryData> data)
