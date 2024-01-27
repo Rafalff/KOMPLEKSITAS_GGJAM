@@ -11,6 +11,7 @@ public class Npc : MonoBehaviour
 	public bool alreadyInteracted;
 
 	public event Action OnTrigger;
+
 	public event Action OnCleared;
 
 	public virtual void CanInteract()

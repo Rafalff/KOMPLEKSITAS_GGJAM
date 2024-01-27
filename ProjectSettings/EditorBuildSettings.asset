@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigameKencing/Kencing2.unity
     guid: fde937734b8b990449462ba76b11821b
+  - enabled: 1
+    path: Assets/Scenes/MinigameKucing/MinigameKucing.unity
+    guid: 655af92a5bd104045a4754ced53575ce
   m_configObjects: {}

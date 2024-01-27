@@ -288,6 +288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: T-post Nenek
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: cd3c0689b04ac7e4b9b4519538506963, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3044020940d12c043b20d82714507079, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

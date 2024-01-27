@@ -9,6 +9,7 @@ public class OpenWorldManager : MonoBehaviour
 
     [SerializeField] private MalingBehaController malingBehaController;
     [SerializeField] private PlayerDrunkController playerDrunkController;
+    [SerializeField] private LemparinKucingController lemparinKucingController;
     [SerializeField] private InventoryController inventoryController;
     [SerializeField] private PlayerMovement player;
     [SerializeField] private ThirdPersonCamera camera;
@@ -39,6 +40,14 @@ public class OpenWorldManager : MonoBehaviour
     public void MalingBehaKetangkep()
     {
         malingBehaController.MalingBehaKetangkep();
+    }
+    public void SebelumKelarKucing()
+    {
+        lemparinKucingController.SebelumSelesaiLemparKucing();
+    }
+    public void SetelahKelarKucing()
+    {
+        lemparinKucingController.SetelahSelesaiLemparKucing();
     }
     public void SetelahDiterimaSayur()
     {
