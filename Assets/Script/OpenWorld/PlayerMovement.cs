@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -30,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float verticalInput;
     [SerializeField] private Vector3 moveDirection;
     [SerializeField] private Rigidbody rb;
+
+    public bool isSober = true;
 
     private void Start()
     {
@@ -80,7 +83,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (isSober)
+        {
+            MovePlayer();
+        }
+        else
+        {
+            MovePlayerDrunk();
+        }
     }
     private void Jump()
     {
@@ -98,13 +108,30 @@ public class PlayerMovement : MonoBehaviour
             return;
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-        if (horizontalInput == 0 && verticalInput == 0)
+
+        if (isSober)
         {
-            anim.SetBool("Lari", false);
+            if (horizontalInput == 0 && verticalInput == 0)
+            {
+                anim.SetBool("Lari", false);
+            }
+            else
+            {
+                anim.SetBool("Lari", true);
+            }
         }
-        else {
-            anim.SetBool("Lari", true);
+        else if(!isSober)
+        {
+            if (horizontalInput == 0 && verticalInput == 0)
+            {
+                anim.SetBool("Walk", false);
+            }
+            else
+            {
+                anim.SetBool("Walk", true);
+            }
         }
+       
 
         if (Input.GetKey(jumpKey) && readyToJump && grounded && canJump)
         {
@@ -123,6 +150,24 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
 
+    private void MovePlayerDrunk()
+    {
+        if(verticalInput > 0) verticalInput =-1;
+        else if(verticalInput < 0) verticalInput = 1;
 
+        if (horizontalInput > 0) horizontalInput = -1;
+        else if (horizontalInput < 0) horizontalInput = 1;
+
+        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        if (grounded)
+            rb.AddForce(moveDirection.normalized * (moveSpeed * 0.5f) * 10f, ForceMode.Force);
+        else if (!grounded)
+            rb.AddForce(moveDirection.normalized * (moveSpeed * 0.5f) * airMultiplier, ForceMode.Force);
+    }
+
+    public void MakePlayerDrunk(bool isPlayerSober)
+    {
+        isSober = isPlayerSober;
+    }
 
 }
