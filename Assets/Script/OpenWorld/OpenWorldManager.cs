@@ -24,6 +24,10 @@ public class OpenWorldManager : MonoBehaviour
     {
         dialogueManager.NewDialogue(data);
     }
+    public void MalingBehaKetangkep()
+    { 
+        
+    }
     public DialogueManager GetDialogue()
     {
         return dialogueManager;

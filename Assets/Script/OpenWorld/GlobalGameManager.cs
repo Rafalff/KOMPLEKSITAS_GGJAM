@@ -9,6 +9,8 @@ public class GlobalGameManager : MonoBehaviour
 	[SerializeField] public bool clearMicin { get; private set; }
 	[SerializeField] public bool clearRokok { get; private set; }
 	[SerializeField] public bool clearSayur { get; private set; }
+
+	public Vector3 lastOpenWorldPosition;
 	private void Awake()
 	{
 		if (Instance == null)
@@ -21,6 +23,21 @@ public class GlobalGameManager : MonoBehaviour
 			{
 				Destroy(gameObject);
 			}
+		}
+	}
+	private void Start()
+	{
+		if (clearMicin)
+		{
+
+		}
+		if (clearRokok)
+		{ 
+		
+		}
+		if (clearSayur)
+		{ 
+		
 		}
 	}
 	public void AddInventory(InventoryData data)

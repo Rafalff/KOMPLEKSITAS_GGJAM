@@ -3,7 +3,17 @@ guid: 818812d1497660a4cb8596e02e3eb49c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jalan2
+    second: {fileID: 2100000, guid: 3e73e4193a11de84297806e524cd782f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tanah
+    second: {fileID: 2100000, guid: 5007d1fee261d78499aa1cdd6161421c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

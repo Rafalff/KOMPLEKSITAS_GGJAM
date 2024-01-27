@@ -12,7 +12,7 @@ public class MalingBehaController : MonoBehaviour
 	[SerializeField] private InventoryData inventoryData;
 	[SerializeField] private DialogueScriptable dialogueData;
 	[SerializeField] private List<Transform> waypoints;
-
+	[SerializeField] private GameObject malingBehaKetangkepTrigger;
 
 	private void Start()
 	{
@@ -40,6 +40,7 @@ public class MalingBehaController : MonoBehaviour
 			ShowObject[i].SetActive(false);
 		}
 		GlobalGameManager.Instance.AddInventory(inventoryData);
+		GlobalGameManager.Instance.ClearRokok();
 	}
 	private void Triggerred()
 	{
@@ -63,5 +64,9 @@ public class MalingBehaController : MonoBehaviour
 		{
 			ShowObject[i].SetActive(true);
 		}
+	}
+	public void MalingBehaKetangkep()
+	{ 
+		
 	}
 }
