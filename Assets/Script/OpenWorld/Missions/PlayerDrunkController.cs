@@ -19,6 +19,8 @@ public class PlayerDrunkController : MonoBehaviour
 	public void StartDialogue()
 	{
 		Debug.Log("StartDialogue");
+		SoundManager.Instance.PlayMusic(SoundName.Ambience);
+		OpenWorldManager.Instance.DisablePlayerJump();
 		OpenWorldManager.Instance.GetDialogue().afterDialogueCompleted += MakePlayerDrunk;
 		OpenWorldManager.Instance.PlayDialogue(dialogueData);
 	}

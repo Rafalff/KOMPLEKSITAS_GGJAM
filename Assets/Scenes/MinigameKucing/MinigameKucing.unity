@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32779706, g: 0.28251186, b: 0.4172182, a: 1}
+  m_IndirectSpecularColor: {r: 0.3273415, g: 0.2819711, b: 0.41690004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -395,6 +395,7 @@ MonoBehaviour:
   dataRokok: {fileID: 11400000, guid: f5b5c0578e30fd74087d09d19ed957ef, type: 2}
   dataSayur: {fileID: 11400000, guid: 80ac850c8b12f9b4c990a610731f7869, type: 2}
   dataKreestal: {fileID: 11400000, guid: 7da3590e48ae2974787507c0ec89edc9, type: 2}
+  firstMonologue: {fileID: 0}
   lastOpenWorldPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &157120779
 Transform:
@@ -2090,6 +2091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7202193382564954512}
   - component: {fileID: 7370277069148061043}
+  - component: {fileID: 7370277069148061044}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -10719,6 +10721,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &7370277069148061044
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65702496235163573}
+  m_Enabled: 1
 --- !u!33 &7398712692487982931
 MeshFilter:
   m_ObjectHideFlags: 0

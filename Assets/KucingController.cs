@@ -27,6 +27,7 @@ public class KucingController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
+            SoundManager.Instance.PlaySfx(SoundName.KencingDapet);
             Rigidbody bulletRb = collision.gameObject.GetComponent<Rigidbody>();
             if (bulletRb != null)
             {

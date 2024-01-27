@@ -16,21 +16,21 @@ MonoBehaviour:
   - imageName: Tas
     name: Tas
     text: Balikin BH cwk yang lo curi!
-    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
+    imageSprite: {fileID: 21300000, guid: 52f845dfd9ac623409cfb4b12bfa143e, type: 3}
     voice: {fileID: 8300000, guid: 97699f06aad4b884e8eb379ef99cb1e2, type: 3}
   - imageName: Bang blok
     name: Bang blok
     text: Dia bukan cwk!
-    imageSprite: {fileID: 21300000, guid: 96a9629b5eea30f419ae1a3f1060f8c4, type: 3}
+    imageSprite: {fileID: 21300000, guid: c89231f6abf596e4290cb843c707ae3f, type: 3}
     voice: {fileID: 8300000, guid: 1c3b6a338e92f594bb1e4e4cd5d09bf8, type: 3}
   - imageName: Tas
     name: Tas
     text: Haaa? mana ada cwk pake BH?
-    imageSprite: {fileID: 21300000, guid: 93247424656845341991658f5102f87f, type: 3}
+    imageSprite: {fileID: 21300000, guid: 52f845dfd9ac623409cfb4b12bfa143e, type: 3}
     voice: {fileID: 8300000, guid: 80fe01dcfd43b0f4e9f26b50153bc8a5, type: 3}
   - imageName: Bang blok
     name: Bang blok
     text: Gua lebih sadar daripada orang sadar, noh biar lebih sadar cobain deh cil
       daun ini.
-    imageSprite: {fileID: 21300000, guid: 96a9629b5eea30f419ae1a3f1060f8c4, type: 3}
+    imageSprite: {fileID: 21300000, guid: c89231f6abf596e4290cb843c707ae3f, type: 3}
     voice: {fileID: 8300000, guid: 06169327e8a4565489cecadf26405b69, type: 3}

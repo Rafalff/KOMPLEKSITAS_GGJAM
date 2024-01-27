@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b099930078da84da82393ce1170ec8, type: 3}
   m_Name: MonologKenaTai
   m_EditorClassIdentifier: 
-  color: {r: 0.9490196, g: 0.78039217, b: 0.21960784, a: 0}
+  color: {r: 0.9490196, g: 0.78039217, b: 0.21960784, a: 1}
   textList:
   - Anj*** kena Ta*
   voiceList:

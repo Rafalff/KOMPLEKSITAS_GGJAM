@@ -133,7 +133,7 @@ public class GlobalGameManager : MonoBehaviour
 			}
 			else if (inventory[i].Name == "Rokok")
 			{
-				haveDaun = true;
+				haveRokok = true;
 			}
 		}
 		if (haveRokok && haveMicin && haveDaun)

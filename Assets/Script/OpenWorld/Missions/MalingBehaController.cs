@@ -69,7 +69,9 @@ public class MalingBehaController : MonoBehaviour
 	private void PlayMalingMinigame()
 	{
 		Debug.Log("Play Maling Minigame");
+		OpenWorldManager.Instance.EnablePlayerJump();
 		banglok.AddWaypoints(waypoints);
+		SoundManager.Instance.PlayMusic(SoundName.Kejar);
 		for (int i = 0; i < HideObject.Length; i++)
 		{
 			HideObject[i].SetActive(false);

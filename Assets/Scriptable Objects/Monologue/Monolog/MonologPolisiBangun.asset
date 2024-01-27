@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: {r: 0.94716984, g: 0.77990055, b: 0.2198148, a: 1}
   textList:
-  - Bjir ada polisi tidur
+  - Bjir Polisi Tidurnya bangun
   voiceList:
   - {fileID: 8300000, guid: 7d4700d34967b8445a1283a582638b73, type: 3}
   delay: 00000000

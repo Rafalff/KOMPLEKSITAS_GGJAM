@@ -21,10 +21,12 @@ public class OpenWorldManager : MonoBehaviour
 	{
         Instance = this;
 	}
+    
 	private void Start()
 	{
+        SoundManager.Instance.PlayMusic(SoundName.Ambience);
         Time.timeScale = 1;
-        OpenWorldManager.Instance.ShowInventory(GlobalGameManager.Instance.GetInventory());
+        ShowInventory(GlobalGameManager.Instance.GetInventory());
     }
     public void ShowInventory(List<InventoryData> data)
     {
@@ -37,6 +39,14 @@ public class OpenWorldManager : MonoBehaviour
     public void PlayDialogue(DialogueScriptable data)
     {
         dialogueManager.NewDialogue(data);
+    }
+    public void EnablePlayerJump()
+    {
+        player.EnableJump();
+    }
+    public void DisablePlayerJump()
+    {
+        player.DisableJump();
     }
     public void MalingBehaKetangkep()
     {

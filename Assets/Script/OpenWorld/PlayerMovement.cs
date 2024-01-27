@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private Animator anim;
-
+    [SerializeField] private Sound[] footStep;
     [Header("GroundCheck")]
     [SerializeField] private float playerHeight;
     [SerializeField] private LayerMask whatIsGround;
@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
     [SerializeField] private MonologueData kencingMonologue;
+    [SerializeField] private MonologueData kenaTaiMonologue;
 
     public bool isSober = true;
 
@@ -50,6 +51,18 @@ public class PlayerMovement : MonoBehaviour
             GlobalGameManager.Instance.CheckOpenScene();
         }
     }
+    public void StepSound()
+    {
+        SoundManager.Instance.PlaySfx(footStep);
+    }
+    public void EnableJump()
+    {
+        canJump = true;
+    }
+    public void DisableJump()
+    {
+        canJump = false;
+    }
    
     public void Pause()
     {
@@ -65,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void KenaTai()
     {
+        OpenWorldManager.Instance.PlayMonologue(kenaTaiMonologue);
        StartCoroutine(KenaTaiDelay());
     }
 	private void OnTriggerEnter(Collider other)
@@ -106,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Jump()
     {
+        SoundManager.Instance.PlaySfx(SoundName.Jump);
         rb.velocity = new Vector3(rb.velocity.x,0,rb.velocity.z);
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
         anim.SetTrigger("Lompat");
@@ -191,7 +206,8 @@ public class PlayerMovement : MonoBehaviour
         //Monologue Pengen Kencing
         OpenWorldManager.Instance.PlayMonologue(kencingMonologue);
         yield return new WaitForSeconds(5);
-        GlobalGameManager.Instance.lastOpenWorldPosition = this.transform.position; ;
+        GlobalGameManager.Instance.lastOpenWorldPosition = this.transform.position;
+        SoundManager.Instance.PlayMusic(SoundName.KencingMusic);
         SceneManager.LoadScene("Kencing1");
 
     }

@@ -31,26 +31,26 @@ MonoBehaviour:
       bareng gua!
 
 '
-    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
+    imageSprite: {fileID: 21300000, guid: 0635d89315717d84d93f11cd7b9c5a86, type: 3}
     voice: {fileID: 8300000, guid: def527813598e9f4794841717690af25, type: 3}
   - imageName: Tas
     name: Tas
     text: Kenapa diriku harus menjaga tempat ini?!
-    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
+    imageSprite: {fileID: 21300000, guid: 22b38d6b1fb8d7849be3acceb4bd2399, type: 3}
     voice: {fileID: 8300000, guid: b414efc27fc61834b8be301641d40504, type: 3}
   - imageName: Nene
     name: Nene
     text: Ada imbalannya dong, lu ambil kucingnya buat peliharaan atau lu dapet endorse
       gratis dari gua
-    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
+    imageSprite: {fileID: 21300000, guid: 8f5f9671cd15c6b4796ea4d2555dd356, type: 3}
     voice: {fileID: 8300000, guid: bec0a02635e092241b38dd2cac749ebb, type: 3}
   - imageName: Tas
     name: Tas
     text: Jiah, pilihan macam apa itu rugi dong?!
-    imageSprite: {fileID: 21300000, guid: 48ecdca589dd7934c886d00ce8d7f392, type: 3}
+    imageSprite: {fileID: 21300000, guid: 22b38d6b1fb8d7849be3acceb4bd2399, type: 3}
     voice: {fileID: 8300000, guid: cc90b99747ee7874ba4a5514a6291868, type: 3}
   - imageName: Nene
     name: Nene
     text: Bac*t, udah lu jaga aja dulu nanti ada rewardnya dah!
-    imageSprite: {fileID: 21300000, guid: 4cf630aece2c5664dbf0e52f157a4592, type: 3}
+    imageSprite: {fileID: 21300000, guid: 8f5f9671cd15c6b4796ea4d2555dd356, type: 3}
     voice: {fileID: 8300000, guid: e31c57cc049622943ba395ce7a9751be, type: 3}

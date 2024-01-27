@@ -8,6 +8,7 @@ public class TargetController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            SoundManager.Instance.PlaySfx(SoundName.KencingDapet);
             KencingManager.instance.targetDoneCount++;
             Destroy(gameObject);
         }

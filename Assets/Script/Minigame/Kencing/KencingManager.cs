@@ -45,6 +45,7 @@ public class KencingManager : MonoBehaviour
                 break;
 
             case GameState.GAMEOVER:
+                SoundManager.Instance.PlaySfx(SoundName.KencingDapet);
                 break;
 
             default:

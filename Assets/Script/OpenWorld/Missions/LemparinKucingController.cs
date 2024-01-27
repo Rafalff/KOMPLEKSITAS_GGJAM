@@ -11,6 +11,7 @@ public class LemparinKucingController : MonoBehaviour
 	[SerializeField] private Nenek nenek;
 	[SerializeField] private DialogueScriptable dialogueData;
 	[SerializeField] private DialogueScriptable dialogueAfterData;
+	[SerializeField] private MonologueData bolaVoli;
 	[SerializeField] private PlayerMovement playerMovement;
 	[SerializeField] private Transform tempatBanglokModar;
 
@@ -27,7 +28,8 @@ public class LemparinKucingController : MonoBehaviour
 	}
 	private void GoToLemparKucing()
 	{
-		GlobalGameManager.Instance.lastOpenWorldPosition = transform.position;
+		GlobalGameManager.Instance.lastOpenWorldPosition = playerMovement.transform.position;
+		SoundManager.Instance.PlayMusic(SoundName.KucingMusic);
 		SceneManager.LoadScene("MinigameKucing");
 	}
 	public void SetelahSelesaiLemparKucing()
@@ -42,6 +44,12 @@ public class LemparinKucingController : MonoBehaviour
 	{
 		GlobalGameManager.Instance.ClearMicin();
 		GlobalGameManager.Instance.GetKreestal();
+		StartCoroutine(BolaVoliDelay());
+	}
+	private IEnumerator BolaVoliDelay()
+	{
+		yield return new WaitForSeconds(3f);
+		OpenWorldManager.Instance.PlayMonologue(bolaVoli);
 	}
 	public void SebelumSelesaiLemparKucing()
 	{
