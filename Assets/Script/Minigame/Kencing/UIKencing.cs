@@ -18,8 +18,10 @@ public class UIKencing : MonoBehaviour
     [SerializeField] private TextMeshProUGUI delayBeforeStartText;
     [SerializeField] private Slider kencingTimerSlider;
     [SerializeField] private TextMeshProUGUI kencingTimerText;
+    [SerializeField] private RectTransform tutorialText;
 
     [SerializeField] private CanvasGroup panelWin;
+    [SerializeField] private CanvasGroup transition;
     private float startSliderTime;
 
     private bool isDelayActive = false;
@@ -32,6 +34,7 @@ public class UIKencing : MonoBehaviour
     private void Start()
     {
         startSliderTime = KencingManager.instance.kencingTimer;
+        StartAnimation();
     }
 
 
@@ -116,5 +119,28 @@ public class UIKencing : MonoBehaviour
     public void NextScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void StartAnimation()
+    {
+        RectTransform rtButton = startButton.gameObject.GetComponent<RectTransform>();
+        RectTransform rtTimer = kencingTimerSlider.gameObject.GetComponent<RectTransform>();
+
+
+        rtButton.DOScale(1f, 1f)
+                .From(0f)
+                .SetEase(Ease.OutSine);
+
+        rtTimer.DOScaleX(1f, 2f)
+                .From(0f)
+                .SetEase(Ease.OutSine);
+
+        tutorialText.DOAnchorPosX(465f, 1f)
+                .From(new Vector2(-300f,tutorialText.anchoredPosition.y))
+                .SetEase(Ease.OutSine);
+
+        transition.DOFade(0f, 0.5f)
+                    .From(1f)
+                    .SetEase(Ease.OutSine);
     }
 }
