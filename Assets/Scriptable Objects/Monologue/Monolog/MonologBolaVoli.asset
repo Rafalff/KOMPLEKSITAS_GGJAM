@@ -16,5 +16,5 @@ MonoBehaviour:
   textList:
   - Bola voli ini aku pake buat apa ya?
   voiceList:
-  - {fileID: 8300000, guid: 77cea7fe1a1d5264cb3c5608cc358bf0, type: 3}
+  - {fileID: 8300000, guid: bb710de2983b9d44983e0ca26e99fc7a, type: 3}
   delay: 00000000
