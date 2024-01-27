@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5423344612078152675}
   - component: {fileID: 8115879093631114238}
   - component: {fileID: 8668078142385840828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.009_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8317562928034194598}
   - component: {fileID: 8367343675901720500}
   - component: {fileID: 2851109598470662098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.006_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5451099755927445865}
   - component: {fileID: 4573769604204738366}
   - component: {fileID: 2726061475035859661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFrame.001_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 2198957522556274601}
   - component: {fileID: 2195175506441983399}
   - component: {fileID: 2667695927566600905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.003_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 276664072324164949}
   - component: {fileID: 8234501469011721236}
   - component: {fileID: 488165787369984442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.003_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 2536368038299500755}
   - component: {fileID: 3375831128881940411}
   - component: {fileID: 3340159140927198602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowSingleSmall.001_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 8107572179671095076}
   - component: {fileID: 1882298245967246559}
   - component: {fileID: 5175784142289973288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.004_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 582932787070813350}
   - component: {fileID: 6246390787058260287}
   - component: {fileID: 5312573096607386992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.001_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 1581086403187832971}
   - component: {fileID: 325590969135416070}
   - component: {fileID: 8476908214235383940}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.001_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 7649392998938523776}
   - component: {fileID: 4577858266434587954}
   - component: {fileID: 1169391272500230805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-walls_WoodFloor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 827892791604040232}
   - component: {fileID: 1380353559199643768}
   - component: {fileID: 5275594154143157490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.002_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 4942106781381036289}
   - component: {fileID: 1958448192385567734}
   - component: {fileID: 6468528952800629495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.002_Accent_Blue_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 5981312897363559515}
   - component: {fileID: 6511266101504609290}
   - component: {fileID: 3947228958079526605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.005_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 2366284493643889351}
   - component: {fileID: 4422083535940906884}
   - component: {fileID: 7153525427255123284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.002_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3055323510918333230}
   - component: {fileID: 6932044146787711490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rumah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -65.27, y: 1.1035378, z: -67.71}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6007844696686504218}
@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 7591106293457288641}
   - component: {fileID: 2013485910396479835}
   - component: {fileID: 2314974612167900692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: windowLarge-triple-designB.006_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 4784633390857430068}
   - component: {fileID: 5922339438201275421}
   - component: {fileID: 2604403997518664983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.001_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1456,7 +1456,7 @@ GameObject:
   - component: {fileID: 6007844696686504218}
   - component: {fileID: 7431007566730131968}
   - component: {fileID: 1167923050512768694}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-chimney_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1539,7 +1539,7 @@ GameObject:
   - component: {fileID: 998871276279456478}
   - component: {fileID: 5727242814492553424}
   - component: {fileID: 3794690406394366472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-walls_WoodSidingSubstance002_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1622,7 +1622,7 @@ GameObject:
   - component: {fileID: 3640571562323920472}
   - component: {fileID: 5033441558200142390}
   - component: {fileID: 6334623438251393239}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.006_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1705,7 +1705,7 @@ GameObject:
   - component: {fileID: 2746855591554730295}
   - component: {fileID: 9084268087807566782}
   - component: {fileID: 5923846984915215346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.001_Accent_Blue_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 4892351304207468991}
   - component: {fileID: 4304737820039059602}
   - component: {fileID: 1003364221629637378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-supportBeams_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1871,7 +1871,7 @@ GameObject:
   - component: {fileID: 6085979381835296097}
   - component: {fileID: 408117348802865845}
   - component: {fileID: 8929953382634468528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.005_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +1954,7 @@ GameObject:
   - component: {fileID: 1886721092405745606}
   - component: {fileID: 6092684285720556265}
   - component: {fileID: 4607140821214728438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.007_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2037,7 +2037,7 @@ GameObject:
   - component: {fileID: 2647040406159919825}
   - component: {fileID: 7782016170074103237}
   - component: {fileID: 616136262829598056}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.001_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2120,7 +2120,7 @@ GameObject:
   - component: {fileID: 2755499133326021949}
   - component: {fileID: 1433503100707046202}
   - component: {fileID: 6025478456163830088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.002_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2203,7 +2203,7 @@ GameObject:
   - component: {fileID: 1995613729373775746}
   - component: {fileID: 5971884463453126266}
   - component: {fileID: 7361258034485530910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.006_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 8532501544333683935}
   - component: {fileID: 556042674079123803}
   - component: {fileID: 1037491749664731640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowSingleSmall.002_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 4883593448200678807}
   - component: {fileID: 4476737438984869784}
   - component: {fileID: 1208553784789054297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-walls_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2452,7 +2452,7 @@ GameObject:
   - component: {fileID: 8451263846512279008}
   - component: {fileID: 8143409297627425358}
   - component: {fileID: 9157319057616596757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.008_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2535,7 +2535,7 @@ GameObject:
   - component: {fileID: 8247142241324305839}
   - component: {fileID: 713128835346872399}
   - component: {fileID: 5948517339765093002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.002_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2618,7 +2618,7 @@ GameObject:
   - component: {fileID: 789940553890130188}
   - component: {fileID: 1442762162412253024}
   - component: {fileID: 5786817069832894459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-siding_C_plywood_grey_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2701,7 +2701,7 @@ GameObject:
   - component: {fileID: 3856402216855907968}
   - component: {fileID: 7464684292246906214}
   - component: {fileID: 9209586771922872968}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.008_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2784,7 +2784,7 @@ GameObject:
   - component: {fileID: 5849021128077023294}
   - component: {fileID: 5088143523693360238}
   - component: {fileID: 1259402628681740029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.009_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2867,7 +2867,7 @@ GameObject:
   - component: {fileID: 1984706687592310247}
   - component: {fileID: 5754546176291743431}
   - component: {fileID: 7672525723425652427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.002_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2950,7 +2950,7 @@ GameObject:
   - component: {fileID: 4104580113441575288}
   - component: {fileID: 3579735476364788594}
   - component: {fileID: 1820884096384556209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.003_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3033,7 +3033,7 @@ GameObject:
   - component: {fileID: 2805014378113125840}
   - component: {fileID: 7532263893065015192}
   - component: {fileID: 3011046037217288142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.002_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3116,7 +3116,7 @@ GameObject:
   - component: {fileID: 5833430663307159514}
   - component: {fileID: 1408397282440960990}
   - component: {fileID: 4474016188605936555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.001_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3199,7 +3199,7 @@ GameObject:
   - component: {fileID: 4913757783279963075}
   - component: {fileID: 4742543076732773275}
   - component: {fileID: 5853554509381394855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.003_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3282,7 +3282,7 @@ GameObject:
   - component: {fileID: 2470323730598836146}
   - component: {fileID: 4325633461760730264}
   - component: {fileID: 8948836916540063184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-roof_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3365,7 +3365,7 @@ GameObject:
   - component: {fileID: 6921700508923314802}
   - component: {fileID: 4836780791776323683}
   - component: {fileID: 6941566597336606752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.005_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3448,7 +3448,7 @@ GameObject:
   - component: {fileID: 4402317992278913739}
   - component: {fileID: 8812379912862349770}
   - component: {fileID: 5184194452470258044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.004_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3531,7 +3531,7 @@ GameObject:
   - component: {fileID: 1490731794249622996}
   - component: {fileID: 4089903685453342857}
   - component: {fileID: 324562082822097343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.003_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3614,7 +3614,7 @@ GameObject:
   - component: {fileID: 6318531328898019535}
   - component: {fileID: 5916932309541428957}
   - component: {fileID: 4489678783037109982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.004_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3697,7 +3697,7 @@ GameObject:
   - component: {fileID: 246045054255346766}
   - component: {fileID: 3288439405024883368}
   - component: {fileID: 2007079828398624905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowSingleSmall.001_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3780,7 +3780,7 @@ GameObject:
   - component: {fileID: 4289206535308177619}
   - component: {fileID: 5670166968513798445}
   - component: {fileID: 7994045454484192665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.004_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3863,7 +3863,7 @@ GameObject:
   - component: {fileID: 6997778054725877005}
   - component: {fileID: 1081510383560371814}
   - component: {fileID: 3478871060648534044}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.001_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3946,7 +3946,7 @@ GameObject:
   - component: {fileID: 1914759410873480858}
   - component: {fileID: 4687061741909996910}
   - component: {fileID: 4070861503974321291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.001_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4029,7 +4029,7 @@ GameObject:
   - component: {fileID: 709736431851388625}
   - component: {fileID: 1770663000590651245}
   - component: {fileID: 6761438245084006431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.005_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4112,7 +4112,7 @@ GameObject:
   - component: {fileID: 2585835387783157464}
   - component: {fileID: 3037684671501759687}
   - component: {fileID: 9082300648597216414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-walls_Accent_Blue_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4195,7 +4195,7 @@ GameObject:
   - component: {fileID: 8900166307336152416}
   - component: {fileID: 7730644053220076537}
   - component: {fileID: 2539526832724068305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: windowLarge-triple-designB.006_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4278,7 +4278,7 @@ GameObject:
   - component: {fileID: 4685293337004384655}
   - component: {fileID: 7825148107987786527}
   - component: {fileID: 5083923222514025147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.005_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4361,7 +4361,7 @@ GameObject:
   - component: {fileID: 383814710119856709}
   - component: {fileID: 2596117945170247640}
   - component: {fileID: 3819693719113204356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-doorFront_I.002_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4444,7 +4444,7 @@ GameObject:
   - component: {fileID: 5700913892764278962}
   - component: {fileID: 1717490869281490877}
   - component: {fileID: 3605361543585136571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.008_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4527,7 +4527,7 @@ GameObject:
   - component: {fileID: 4940156180192518982}
   - component: {fileID: 6032454653770565749}
   - component: {fileID: 7689542953933191632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowDouble.006_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4610,7 +4610,7 @@ GameObject:
   - component: {fileID: 3482729092570061736}
   - component: {fileID: 1211581847921692304}
   - component: {fileID: 7241272456224357906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: windowLarge-triple-designB.006_Wood_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4693,7 +4693,7 @@ GameObject:
   - component: {fileID: 5759491509839246335}
   - component: {fileID: 3001624407713526209}
   - component: {fileID: 8916164452469213079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-foundation_ConcreteSubstance004_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4776,7 +4776,7 @@ GameObject:
   - component: {fileID: 831785002227949476}
   - component: {fileID: 6524469719297488069}
   - component: {fileID: 7862379401781124112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-chimney_Metal_White_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4859,7 +4859,7 @@ GameObject:
   - component: {fileID: 6922913445750154494}
   - component: {fileID: 3579314282616437489}
   - component: {fileID: 4302978728664466055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.004_Metal_Aluminum_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4942,7 +4942,7 @@ GameObject:
   - component: {fileID: 8530407701253612031}
   - component: {fileID: 4005534959417362528}
   - component: {fileID: 2394638280926404245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-roof_Asphalt020_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5025,7 +5025,7 @@ GameObject:
   - component: {fileID: 4184589042433095543}
   - component: {fileID: 8119227055457879172}
   - component: {fileID: 7232735204090419563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.007_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,7 +5108,7 @@ GameObject:
   - component: {fileID: 5671179700397415332}
   - component: {fileID: 4272960410441301530}
   - component: {fileID: 5038414761570758053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-windowSingleSmall.002_Glass_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5191,7 +5191,7 @@ GameObject:
   - component: {fileID: 1264638047831724855}
   - component: {fileID: 9104986006339477334}
   - component: {fileID: 2779495995534578351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-interiorFrame.009_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5274,7 +5274,7 @@ GameObject:
   - component: {fileID: 3932327907934562913}
   - component: {fileID: 2797234099118145648}
   - component: {fileID: 1891715953719202024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.007_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5357,7 +5357,7 @@ GameObject:
   - component: {fileID: 520251977845876322}
   - component: {fileID: 8032974436904522637}
   - component: {fileID: 6697580342556699036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fw-50-door-Interior.006_Wood058_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

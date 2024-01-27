@@ -48,6 +48,24 @@ public class PlayerMovement : MonoBehaviour
     {
         paused = false;
     }
+    public void KenaTai()
+    {
+       StartCoroutine(KenaTaiDelay());
+    }
+	private void OnTriggerEnter(Collider other)
+	{
+        if (other.CompareTag("Tai"))
+        {
+            KenaTai();
+            other.gameObject.SetActive(false);
+        }
+	}
+	private IEnumerator KenaTaiDelay()
+    {
+        rb.mass = 15;
+        yield return new WaitForSeconds(2f);
+        rb.mass = 3;
+    }
     private void Update()
     {
         

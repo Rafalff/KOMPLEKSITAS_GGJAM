@@ -15,6 +15,10 @@ public class MalingBehaController : MonoBehaviour
 	{
 		banci.OnCleared += Cleared;
 		banci.OnTrigger += Triggerred;
+		for (int i = 0; i < ShowObject.Length; i++)
+		{
+			ShowObject[i].SetActive(false);
+		}
 	}
 	private void OnDestroy()
 	{
@@ -36,10 +40,13 @@ public class MalingBehaController : MonoBehaviour
 	}
 	private void Triggerred()
 	{
-		Debug.Log("Trigger Maling Beha");
-		OpenWorldManager.Instance.GetDialogue().afterDialogueCompleted += PlayMalingMinigame;
-		OpenWorldManager.Instance.PlayDialogue(dialogueData);
-		isActive = true;
+		if (!isActive)
+		{
+			Debug.Log("Trigger Maling Beha");
+			OpenWorldManager.Instance.GetDialogue().afterDialogueCompleted += PlayMalingMinigame;
+			OpenWorldManager.Instance.PlayDialogue(dialogueData);
+			isActive = true;
+		}
 	}
 	private void PlayMalingMinigame()
 	{
