@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45b099930078da84da82393ce1170ec8, type: 3}
-  m_Name: 1
+  m_Name: MonologKenaTai
   m_EditorClassIdentifier: 
-  color: {r: 0.94716984, g: 0.77990055, b: 0.2198148, a: 1}
+  color: {r: 0.9490196, g: 0.78039217, b: 0.21960784, a: 0}
   textList:
-  - Kontol Kontol Kontol
-  - Kontol Kontol Kontol
+  - Anj*** kena Ta*
   voiceList:
   - {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
-  - {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
-  delay: 0000000000000000
+  delay: 00000000

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb10da57b2e1f8d49a0928dd942ff288, type: 3}
+  m_Name: DialogTas&Nenek2
+  m_EditorClassIdentifier: 
+  dialogueList:
+  - imageName: Nene
+    name: Nene
+    text: Bro, kadieu!
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Tas
+    name: Tas
+    text: (Wah, nenek gaul sepertinya butuh bantuan, hal bodoh apalagi yang mau dia
+      lakukan ya?!)
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Nene
+    name: Nene
+    text: 'Kamu jagain kebun gua ya, gua mau b*rak kebelakang, disini suka ada kucing
+      ber*k. jangan sampai dia b*r*k di halaman gua, suruh aja ke belakang b***k
+      bareng gua!
+
+'
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Tas
+    name: Tas
+    text: Kenapa diriku harus menjaga tempat ini?!
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Nene
+    name: Nene
+    text: Ada imbalannya dong, lu ambil kucingnya buat peliharaan atau lu dapet endorse
+      gratis dari gua
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Tas
+    name: Tas
+    text: Jiah, pilihan macam apa itu rugi dong?!
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  - imageName: Nene
+    name: Nene
+    text: Bac*t, udah lu jaga aja dulu nanti ada rewardnya dah!
+    imageSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}

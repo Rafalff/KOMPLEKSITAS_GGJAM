@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b099930078da84da82393ce1170ec8, type: 3}
+  m_Name: MonologPolisiBangun
+  m_EditorClassIdentifier: 
+  color: {r: 0.94716984, g: 0.77990055, b: 0.2198148, a: 1}
+  textList:
+  - Bjir ada polisi tidur
+  voiceList:
+  - {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+  delay: 00000000
