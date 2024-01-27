@@ -18,7 +18,7 @@ public class MalingBehaController : MonoBehaviour
 		for (int i = 0; i < ShowObject.Length; i++)
 		{
 			ShowObject[i].SetActive(false);
-		}
+		} 
 	}
 	private void OnDestroy()
 	{

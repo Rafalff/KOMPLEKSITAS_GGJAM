@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4118022668432771734}
   - component: {fileID: 2793192673114112177}
+  - component: {fileID: 5311005835076991545}
+  - component: {fileID: 2832323043955175681}
   m_Layer: 0
   m_Name: BangBlog
   m_TagString: Untagged
@@ -51,6 +53,48 @@ MonoBehaviour:
   canInteract: 0
   interactObject: {fileID: 6652378310205440144}
   alreadyInteracted: 0
+--- !u!65 &5311005835076991545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859566305861375504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 4.2095695, z: 1}
+  m_Center: {x: 0, y: 2.0391223, z: 0}
+--- !u!114 &2832323043955175681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859566305861375504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78dfe88a09f34e64eae7f0eb9f150d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: b201fda76fb37fb45b3a3cf5c9f2203e, type: 2}
+  canInteract: 0
+  interactObject: {fileID: 6652378310205440144}
+  alreadyInteracted: 0
+  isLari: 0
+  lariIndex: 0
+  speed: 5
+  anim: {fileID: 3864206610347906407}
+  waypoints: []
 --- !u!1 &5690751103332658235
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,7 +112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5871467360570139279
 Transform:
   m_ObjectHideFlags: 0
@@ -246,15 +290,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2277794
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.961462
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.776983
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -288,11 +332,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: T-post Bang blog
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e7b429c7c6a06fc41a4093171b1cf967, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
+--- !u!95 &3864206610347906407 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
+  m_PrefabInstance: {fileID: 7262897560124156150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7151794981353361181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81d278a8e90a1744e8dbcb589b770e4a, type: 3}
