@@ -17,9 +17,9 @@ MonoBehaviour:
     name: Siluet Perempuan
     text: Aaah, ada maling! bh aing itu di curi
     imageSprite: {fileID: 21300000, guid: fe73937834ad5734999231bedd0c2fc9, type: 3}
-    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+    voice: {fileID: 8300000, guid: 1fd188aac6886224aa84cb3aec72965b, type: 3}
   - imageName: Bang blok
     name: Bang blok
     text: Puja bh ajaiiibb lululu!
     imageSprite: {fileID: 21300000, guid: 0e0e9a196db7a75408c6e7f24137b508, type: 3}
-    voice: {fileID: 8300000, guid: b93103b0b17b7a64d9c675737ed34acb, type: 3}
+    voice: {fileID: 8300000, guid: 77cea7fe1a1d5264cb3c5608cc358bf0, type: 3}
