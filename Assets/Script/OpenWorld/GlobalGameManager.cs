@@ -127,11 +127,12 @@ public class GlobalGameManager : MonoBehaviour
 			if (inventory[i].Name == "Daun")
 			{
 				haveDaun = true;
-			} else if (inventory[i].Name =="Micin")
+			}
+			if (inventory[i].Name == "Micin")
 			{
 				haveMicin = true;
 			}
-			else if (inventory[i].Name == "Rokok")
+			if (inventory[i].Name == "Rokok")
 			{
 				haveRokok = true;
 			}
