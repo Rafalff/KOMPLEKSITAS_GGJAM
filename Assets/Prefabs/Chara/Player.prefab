@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 12
   anim: {fileID: 1523028811280056373}
-  playerHeight: 1
+  playerHeight: 1.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
@@ -59,12 +59,15 @@ MonoBehaviour:
   airMultiplier: 0
   readyToJump: 1
   canJump: 1
+  paused: 0
   jumpKey: 32
   orientation: {fileID: 2008427119879001614}
   horizontalInput: 0
   verticalInput: 0
   moveDirection: {x: 0, y: 0, z: 0}
   rb: {fileID: 5946429054429494899}
+  kencingMonologue: {fileID: 11400000, guid: e311a05983f1cbc478436bd763e39595, type: 2}
+  isSober: 1
 --- !u!54 &5946429054429494899
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -291,7 +294,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2541579976537479546}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 084414d61a21b3c439e918500bc57e43, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

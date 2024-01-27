@@ -27,6 +27,8 @@ public class KencingManager : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         UpdateGameState(GameState.WAIT);
     }
 

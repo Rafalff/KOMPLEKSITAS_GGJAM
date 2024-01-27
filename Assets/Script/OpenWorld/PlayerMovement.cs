@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector3 moveDirection;
     [SerializeField] private Rigidbody rb;
 
+    [SerializeField] private MonologueData kencingMonologue;
+
     public bool isSober = true;
 
     private void Start()
@@ -39,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
+   
     public void Pause()
     {
         paused = true;
@@ -169,5 +173,17 @@ public class PlayerMovement : MonoBehaviour
     {
         isSober = isPlayerSober;
     }
+    public void SoberTimer()
+    {
+        StartCoroutine(SoberDelay());
+    }
+    private IEnumerator SoberDelay()
+    {
+        yield return new WaitForSeconds(10);
+        //Monologue Pengen Kencing
+        OpenWorldManager.Instance.PlayMonologue(kencingMonologue);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Kencing1");
 
+    }
 }

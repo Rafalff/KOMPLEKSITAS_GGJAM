@@ -13,6 +13,7 @@ public class BangBlok : Npc
 
     [SerializeField] private List<Transform> waypoints;
     [SerializeField] private Transform bangBlokTransform;
+    [SerializeField] private PlayerDrunkController playerDrunkController;
 
     public void StartLari()
     {
@@ -37,6 +38,7 @@ public class BangBlok : Npc
                 {
                     Debug.Log("Kelar Lari");
                     isLari = false;
+                    playerDrunkController.ActivateTrigger();
                 }
             }
         }
@@ -77,6 +79,7 @@ public class BangBlok : Npc
                     isLari = false;
                     anim.SetBool("Lari", false);
                     anim.SetTrigger("Modar");
+                    playerDrunkController.ActivateTrigger();
                 }
             }
           
